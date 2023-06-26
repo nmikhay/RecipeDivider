@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Divider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Piece of Cake🍰</h1>
+        <div class="servings">
+            <div>
+                <label for="originalServings">Original Servings:</label>
+                <input type="number" id="originalServings" min="1">
+            </div>
+            <div>
+                <label for="desiredServings">Desired Servings:</label>
+                <input type="number" id="desiredServings" min="1">
+            </div>
+        </div>
+        <label for="originalRecipe">Original Recipe:</label>
+        <textarea id="originalRecipe" rows="10" cols="30"></textarea>
+        <button onclick="divideRecipe()">Divide Recipe</button>
+        <label for="dividedRecipe">Divided Recipe:</label>
+        <textarea id="dividedRecipe" rows="10" cols="30" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
